@@ -2518,6 +2518,50 @@ c START EXECUTION PHASE
           call mpi_comm_size(mpi_comm_world, nodes , info)
 c          time1 = gettime()
 
+    	do j = 1, num_suppyrRS
+        outctr_suppyrRS (j)            = 0
+           end do ! j
+	do j = 1, num_suppyrFRB
+        outctr_suppyrFRB(j)            = 0
+           end do ! j
+ 	do j = 1, num_supbask  
+         outctr_supbask(j)             = 0
+           end do ! j
+        do j = 1, num_supaxax  
+        outctr_supaxax(j)             = 0
+           end do ! j
+        do j = 1, num_supLTS   
+        outctr_supLTS(j)              = 0
+           end do ! j
+        do j = 1, num_spinstell
+        outctr_spinstell(j)            = 0
+           end do ! j
+        do j = 1, num_tuftIB   
+        outctr_tuftIB(j)               = 0
+           end do ! j
+         do j = 1, num_tuftRS
+       	 outctr_tuftRS(j)              = 0
+           end do ! j
+         do j = 1, num_nontuftRS   
+         outctr_nontuftRS(j)          = 0
+           end do ! j
+           do j = 1, num_deepbask    
+        outctr_deepbask(j)             = 0
+           end do ! j
+           do j = 1, num_deepaxax    
+        outctr_deepaxax (j)            = 0
+           end do ! j
+           do j = 1, num_deepLTS     
+        outctr_deepLTS(j)              = 0
+           end do ! j
+           do j = 1, num_TCR         
+        outctr_TCR(j)                  = 0
+           end do ! j
+           do j = 1, num_nRT         
+        outctr_nRT(j)                  = 0
+           end do ! j
+
+
          do i = 1, 5000
            do j = 1, num_suppyrRS
         outtime_suppyrRS(i,j)             = -1.d5
@@ -2565,7 +2609,7 @@ c          time1 = gettime()
 
 !         timtot =  750.d0
 !          timtot = 1600.d0
-        timtot = 0.5d0        ! projected to take 1 minute
+        timtot = 5d0        ! projected to take 1 minute
 !          timtot = 10.d0
 
 c Setup tables for calculating exponentials
