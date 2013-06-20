@@ -25,7 +25,7 @@
        integer, parameter:: numcomp = 137  ! should be compat. with calling prog
 
        integer numcell, totaxgj, gjtable(totaxgj,4)
-       INTEGER numcell, I, J, L, L1, O
+       INTEGER  I, J, L, L1, O
 c numcell = total number of tcr cells in system;
 c L = cell number relative to entire system
         real*8 Mg, gapcon, dt, time

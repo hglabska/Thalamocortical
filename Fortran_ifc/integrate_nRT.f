@@ -15,9 +15,9 @@
 
        integer, parameter:: numcomp = 59  ! should be compat. with calling prog
 
-       INTEGER numcell, n, O, I, J, L, L1, totaxgj
+       INTEGER  n, I, J, L, L1, totaxgj
        INTEGER gjtable(totaxgj,4)
-       real*8 time, Mg, gapcon, dt
+       real*8  Mg, gapcon
 c L = cell number relative to entire system
 
 c CINV is 1/C, i.e. inverse capacitance
@@ -104,7 +104,7 @@ c below are for calculating the partial derivatives
      x dfmar_dmar(numcomp),dfmar_dv(numcomp),dfmkahp_dchi(numcomp),
      x dfmkahp_dmkahp(numcomp), dt2, outrcd(20), time
 
-         REAL*8 dt,mg,vL,vk,vna,var,vca,vgaba_a,Z,Z1,Z2
+         REAL*8 dt,vL,vk,vna,var,vca,vgaba_a,Z,Z1,Z2
          INTEGER O, K1, NEIGH(numcomp,5), NNUM(numcomp)
          INTEGER level(numcomp)
        REAL*8 OPEN(numcomp),gamma(numcomp),gamma_prime(numcomp)
