@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/Thalamocortical_loop_based_on_Traub/!svn/ver/5/nrntraub/net/params
+END
+tau_nmda.dat
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/Thalamocortical_loop_based_on_Traub/!svn/ver/5/nrntraub/net/params/tau_nmda.dat
+END
+comp_allow.dat
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/Thalamocortical_loop_based_on_Traub/!svn/ver/5/nrntraub/net/params/comp_allow.dat
+END
+connections_ncomp_allow.dat
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/Thalamocortical_loop_based_on_Traub/!svn/ver/5/nrntraub/net/params/connections_ncomp_allow.dat
+END
+gj_comp_allow.dat
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/Thalamocortical_loop_based_on_Traub/!svn/ver/5/nrntraub/net/params/gj_comp_allow.dat
+END
+g_gaba.dat
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/Thalamocortical_loop_based_on_Traub/!svn/ver/5/nrntraub/net/params/g_gaba.dat
+END
+connections.dat
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/Thalamocortical_loop_based_on_Traub/!svn/ver/5/nrntraub/net/params/connections.dat
+END
+tau_gaba.dat
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/Thalamocortical_loop_based_on_Traub/!svn/ver/5/nrntraub/net/params/tau_gaba.dat
+END
+g_ampa.dat
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/Thalamocortical_loop_based_on_Traub/!svn/ver/27/nrntraub/net/params/g_ampa.dat
+END
+g_nmda.dat
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/Thalamocortical_loop_based_on_Traub/!svn/ver/5/nrntraub/net/params/g_nmda.dat
+END
+tau_ampa.dat
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/Thalamocortical_loop_based_on_Traub/!svn/ver/5/nrntraub/net/params/tau_ampa.dat
+END

@@ -1,0 +1,51 @@
+objref  pop_base, spread, depth, spread_cell, depth_cell, results[cells_type], ret
+
+
+
+
+spread = new Vector()
+depth = new Vector()
+
+{pop_base = new Vector()
+pop_base.integral(Num_pop,1).add(-1)}
+
+suppyrRS_base = -1
+suppyrFRB_base = pop_base.x(0) 
+supbask_base = pop_base.x(1) 
+supaxax_base = pop_base.x(2) 
+supLTS_base = pop_base.x(3) 
+spinstell_base = pop_base.x(4) 
+tuftIB_base = pop_base.x(5)
+tuftRS_base = pop_base.x(6)
+nontuftRS_base = pop_base.x(7)
+deepbask_base = pop_base.x(8)
+deepaxax_base = pop_base.x(9)
+deepLTS_base = pop_base.x(10)
+TCR_base = pop_base.x(11)
+nRT_base = pop_base.x(12)
+
+base_ = -1
+
+
+proc create_cells(){local i, alpha_, coorx, coory, coorz, beta, r localobj coor 
+
+	strdef proc_exec
+
+	
+
+	if (pmesg) print "creating ", $s2
+
+	for i=0, $3-1 {
+	   if (serial) {
+	     cell_append(execute("new %s()",$s2), 0, 0, base_)
+	   } else {
+	    sprint(proc_exec,"cell_append(new %s(),%20.10e, %20.10e,%20.10e)",$s2, 0, 0, base_)
+	     par_create(proc_exec)
+	   }
+	   base_ = base_ + 1
+	}
+
+
+}
+
+
