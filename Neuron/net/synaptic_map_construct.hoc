@@ -1,6 +1,6 @@
-objref map, x
+//objref map, x
 
-obfunc synaptic_map_construct (){ localobj f, s, tmpmap
+obfunc synaptic_map_construct (){ local i, k, ii,j,num_postsynaptic_cells, num_presynaptic_cells, num_presyninputs_perpostsyn_cell localobj f, s, tmpmap,x,map
 	/* $1 thisno,
 	$2 num_presynaptic_cells,
 	$3 num_postsynaptic_cells,
@@ -26,30 +26,29 @@ obfunc synaptic_map_construct (){ localobj f, s, tmpmap
 	thisno = $1
 	num_presynaptic_cells = $2
 	num_postsynaptic_cells = $3
-	objref map
+	//objref map
 	//map = $o4 // dosen't matter
 	num_presyninputs_perpostsyn_cell = $4
 	display = $5
 	// objref seed
 	seed = new Vector()
 	seed.append(297.e0)
-	map = new Matrix( num_presyninputs_perpostsyn_cell+1, num_postsynaptic_cells+1 )
-
+	map = new Matrix( num_presyninputs_perpostsyn_cell, num_postsynaptic_cells )
+//print num_presyninputs_perpostsyn_cell, num_postsynaptic_cells
   if (!use_p2c_net_connections) {
 	k = 1
 
-	for ii = 1, num_postsynaptic_cells {
+	for ii = 0, num_postsynaptic_cells -1 {
 	//	print " Constructing map for cell #",ii
-		for j = 1, num_presyninputs_perpostsyn_cell {
+		for j = 0, num_presyninputs_perpostsyn_cell -1{
 	        	x = durand (seed, k, x)
 			// This defines a presynaptic cell
 		
-		        LL = int ( x.x(0) * num_presynaptic_cells ) + 1
-		        if (LL > num_presynaptic_cells) {
+		        LL = int ( x.x(0) * num_presynaptic_cells ) 
+		        if (LL > num_presynaptic_cells -1) {
 				print " unnexpected boundary issue in synaptic_map_construct()"
 				LL = num_presynaptic_cells
 			}
-
 		        map.x[j][ii] = LL
 	
 		}
@@ -58,10 +57,16 @@ obfunc synaptic_map_construct (){ localobj f, s, tmpmap
 	// Possibly print out map when done.
 	if ((display == 1) && (thisno == 0)) {
 		print "SYNAPTIC MAP"
-	        for i = 1, num_postsynaptic_cells {
-         		printf("%6d %6d %6d \n",map.x(1,i), map.x(2,i), \
-			map.x(num_presyninputs_perpostsyn_cell,i))
+		s = new String()
+		sprint(s.s, "../p2c/map%s.dat", $s6)
+		//printf("%s %d %d\n", s.s, map.nrow-1, map.ncol-1)
+		f = new File()
+		f.wopen(s.s)
+	      for i = 0, num_postsynaptic_cells -1 {
+         		f.printf("%6d %6d \n",map.x(0,i),  \
+			map.x(num_presyninputs_perpostsyn_cell-1,i))
 		}
+		f.close()
 	}
   }else{
 	// read from file created by port2colossus

@@ -4,6 +4,14 @@
 objref cells, nclist, netcon
 {cells = new List() nclist = new List()}
 
+proc open_file_to_read(){
+	strdef str_
+	$o3 = new File()
+	sprint(str_, "%s%s", $s1, $s2)
+        $o3.ropen(str_)
+
+}
+
 func cell_append() {
 	cells.append($o1)
 	$o1.position($2,$3,$4)
