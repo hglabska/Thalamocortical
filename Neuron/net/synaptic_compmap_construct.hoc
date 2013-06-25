@@ -1,6 +1,6 @@
 objref compmap, allow, x
 
-obfunc synaptic_compmap_construct () { local nrow, ncol  localobj f, s, tmpmap
+obfunc synaptic_compmap_construct () { local nrow, ncol,k,j,ii,jj,i  localobj f, s, tmpmap,compmap,x
 /*
 ***************************************************************
 Parameter, Description:
@@ -46,39 +46,51 @@ c allow = list of allowed compartments
 	allow = $o5
 	display = $6
 
-	objref compmap
-	compmap = new Matrix(num_presyninputs_perpostsyn_cell+1, num_postsynaptic_cells+1)
+	//objref compmap
+	compmap = new Matrix(num_presyninputs_perpostsyn_cell, num_postsynaptic_cells)
   if (!use_p2c_net_connections) {
 //            map = 0
             k = 1
 // print "num_postsynaptic_cells, num_presyninputs_perpostsyn_cell = ",num_postsynaptic_cells, num_presyninputs_perpostsyn_cell
 // print "matrix size = ",compmap.nrow(),compmap.ncol()
 
-        for ii = 1, num_postsynaptic_cells {
-        for jj = 1, num_presyninputs_perpostsyn_cell {
-            x = durand (seed, k, x)
-// c This defines a compartment     
-           LL = int ( x.x[0] * (num_allowcomp) ) + 1
-//	 print "jj,ii: ",jj,ii, " LL=",LL
-        if (LL > num_allowcomp) {
-		print " unnexpected boundary issue in synaptic_compmap_construct()"
-		LL = num_allowcomp
-	}
-// print allow.x(L)
-           compmap.x[jj][ii] = allow.x[LL]
+        for ii = 0, num_postsynaptic_cells -1{
+        for jj = 0, num_presyninputs_perpostsyn_cell -1{
 
-        }
+		if (num_allowcomp == 1){
+			compmap.x[jj][ii]  = allow.x[0] 
+
+		}else{
+            		x = durand (seed, k, x)
+// c This defines a compartment     
+          		 LL = int ( x.x[0] * (num_allowcomp) ) 
+//	 print "jj,ii: ",jj,ii, " LL=",LL
+        		if (LL > num_allowcomp -1) {
+				print " unnexpected boundary issue in synaptic_compmap_construct()"
+				LL = num_allowcomp -1
+				}
+ //print allow.x(LL)
+           		compmap.x[jj][ii] = allow.x[LL] 
+		
+        		}
+		}
         }
 
 	thisno = $1
 // c Possibly print out map when done.
        if ((display == 1) && (thisno == 0)) {
+	s = new String()
+	sprint(s.s, "../p2c/compma%s.dat", $s7)
+//printf("%s %d %d\n", s.s, nrow, ncol)
+	f = new File()
+	f.wopen(s.s)
 	print "SYNAPTIC COMPARTMENT MAP "
-        for i = 1, num_postsynaptic_cells {
-         printf("%6d %6d %6d\n", compmap.x(1,i), compmap.x(2,i), \
-         compmap.x(num_presyninputs_perpostsyn_cell,i))               
+	      for i = 0, num_postsynaptic_cells -1{
+         f.printf("%6d %6d\n", compmap.x(0,i), \
+         compmap.x(num_presyninputs_perpostsyn_cell-1,i))               
 
         }
+	f.close()
        }
   }else{
 	// read from file created by port2colossus

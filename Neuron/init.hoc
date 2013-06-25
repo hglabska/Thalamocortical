@@ -1,6 +1,10 @@
 setuptime = startsw()
 {xopen("hoc/defvar.hoc")}
 
+strdef params_dir
+//global path you should change!
+params_dir = "/home/hglabska/data2/Thalamocortical/Neuron/net/params/"
+
 // load balancing implies several runs.
 // 0) load balancing just plain off (but will read mcomplex.dat if exists)
 // 1) create a mcomplex.dat file (only one cpu needed)
@@ -36,6 +40,12 @@ default_var("selfevents", 0)
 
 default_var("fakerank", -1)
 default_var("fakenhost", -1)
+
+default_var("NBQX" ,1)
+default_var("picrotoxin" ,1 )
+default_var("scale_TCR_output", 1)
+default_var("scale_NMDA_conductances" ,1)
+
 
 gfac_AMPA = 1
 gfac_NMDA = 1
