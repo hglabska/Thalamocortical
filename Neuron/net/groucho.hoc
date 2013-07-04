@@ -936,7 +936,7 @@ for j = 0,cells_type-1{
 
 					//AMPA and NMDA connections
 					
-	    				postsyncell_.compartments[m] syn_ = new AMPA(0.5)
+	    				postsyncell_.compartments[m].sec syn_ = new AMPA(0.5)
 	   				postsyncell_.synlist.append(syn_)
 	    				syn_.tau = tauAMPA.x[ord_i][ord_j]
 					if (syn_.tau == 0){print "tauAMPA",m,ord_i,ord_j}
@@ -946,7 +946,7 @@ for j = 0,cells_type-1{
 	    				nc_append(base1 + a, base2 + postsyn_cell_num, postsyncell_.synlist.count()-1, ampa_weight, delay)
 
 	    				// place NMDA synapse in compartment k of postsynaptic cell postsyn_cell_num:
-	    				postsyncell_.compartments[m] syn_ = new NMDA(0.5)
+	    				postsyncell_.compartments[m].sec syn_ = new NMDA(0.5)
 	    				postsyncell_.synlist.append(syn_)
 					if (syn_.tau == 0){print "tauNMDA",m,ord_i,ord_j}
 	    				syn_.tau = tauNMDA.x[ord_i][ord_j]
@@ -958,7 +958,7 @@ for j = 0,cells_type-1{
 						
 					//GABA connections
 					
-					postsyncell_.compartments[m] syn_ = new GABAA(0.5)
+					postsyncell_.compartments[m].sec syn_ = new GABAA(0.5)
 	   				postsyncell_.synlist.append(syn_)
 	    				syn_.tau = tauGABA.x[ord_i][ord_j]
 
@@ -966,7 +966,7 @@ for j = 0,cells_type-1{
 
 						// different GABA connections from nRT	
 			
-						postsyncell_.compartments[m] syn2_ = new GABAA(0.5)
+						postsyncell_.compartments[m].sec syn2_ = new GABAA(0.5)
 	   					postsyncell_.synlist.append(syn2_)
 	    					syn2_.tau = tauGABA.x[ord_i][ord_j]
 

@@ -3,7 +3,9 @@ setuptime = startsw()
 
 strdef params_dir
 //global path you should change!
+
 params_dir = "/home/hglabska/data2/Thalamocortical/Neuron/net/params/"
+//params_dir = "/home/hglabska/data2/Thalamocortical/Neuron/net/params_Hay/" //for Hay cell
 
 // load balancing implies several runs.
 // 0) load balancing just plain off (but will read mcomplex.dat if exists)
