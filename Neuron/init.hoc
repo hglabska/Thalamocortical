@@ -21,10 +21,11 @@ default_var("load_balance_phase", 0)
 default_var("one_tenth_ncell", 1)
 default_var("use_gap", 0)
 default_var("use_ectopic", 1)
-default_var("use_inject", 1)
+default_var("use_inject", 1) 
+default_var("use_input_curr", 0)//1 if you want add some additional current e.g to stimulate thalamus
 default_var("awake", 1)
 default_var("default_delay", 0.5)
-default_var("ranseedbase", 1)
+default_var("ranseedbase", 1) 
 default_var("use_traubexact", 0) // will be reset to 0 if load balance
 default_var("wholecell_prefix", "cxwhole")
 default_var("multisplit_prefix", "cx")

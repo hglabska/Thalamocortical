@@ -105,5 +105,26 @@ proc set_const_curr_inj() {
 	}
 }
 
+objref iclamp_list, iclampobj
+iclamp_list = new List()  // don't know if we will need these
+proc set_input_curr() { 
+// arguments past are
+// double cellname_base, double num_cellname, Vector curr_cellname
+//        $1                    $2                   $o3
+	if (!use_input_curr) { return }
+	for i=1,$2 { // loop over all the cells
+	// create the IClamp
+
+	// insert IClamp
+
+	    cells.object($1 + i).comp[1] iclampobj = new IClamp(0.5)
+//	    cells.object($1 + i).synlist.append(tmpobj)  // should this be on this list?
+	    iclampobj.del = $5
+	    iclampobj.dur = $4
+	    iclampobj.amp = $3
+	    iclamp_list.append(iclampobj)
+	}
+}
+
 
 if (pmesg) print "made it to end of network_specification_interface.hoc"

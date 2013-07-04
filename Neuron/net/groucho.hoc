@@ -715,6 +715,9 @@ for case (&j, 0,1,2,5,6,7,8,13,12){
 
 if (pmesg)	print "Completed adding constant random current injections."
 
+//add some additional current to stimulate the network (e.g. to thalamus)
+//works only if use_input_curr = 1
+set_input_curr( pop_base.x(11), Num_pop.x(12), 3, 2,120)
 
 //possible different values:
 
