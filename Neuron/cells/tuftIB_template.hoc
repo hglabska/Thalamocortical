@@ -162,16 +162,16 @@
          // compartment source in the presyn cell
  
          public comp, level, Soma, Dendrites
-         public Soma_Dendrites, Axon, all
+         public Soma_Dendrites, Axon, all,compartments
          public presyn_comp, top_level
          // it is the responsibility of the calling
          // program to set the above presynaptic
          // compartment number
  
-         external traub_connect
+         external traub_connect, getAbsSecIndex
          objref this
   create  comp[ 61+1]
-         objref level[ 18+1], Soma, Dendrites
+         objref level[ 18+1], Soma, Dendrites,compartments[61+1]
          objref Soma_Dendrites, Axon
          objref synlist
 func type() {return    6 }
@@ -1095,5 +1095,11 @@ func type() {return    6 }
  comp[ 42] { if (ismembrane("cal")) {gbar_cal *= 2.0 }}
  comp[ 43] { if (ismembrane("cal")) {gbar_cal *= 2.0 }}
  comp[ 44] { if (ismembrane("cal")) {gbar_cal *= 2.0 }}
+
+	forall{
+		compartments[getAbsSecIndex(secname())] = new SectionRef()
+
+	}
+
  }
   endtemplate tuftIB

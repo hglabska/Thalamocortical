@@ -88,17 +88,17 @@
          // the above function added to set neton
          // compartment source in the presyn cell
  
-         public comp, level, Soma, Dendrites
+         public comp, level, Soma, Dendrites,compartments
          public Soma_Dendrites, Axon, all
          public presyn_comp, top_level
          // it is the responsibility of the calling
          // program to set the above presynaptic
          // compartment number
  
-         external traub_connect
+         external traub_connect,getAbsSecIndex
          objref this
   create  comp[ 50+1]
-         objref level[ 14+1], Soma, Dendrites
+         objref level[ 14+1], Soma, Dendrites,compartments[50 + 1]
          objref Soma_Dendrites, Axon
          objref synlist
 func type() {return 8 }
@@ -834,5 +834,9 @@ func type() {return 8 }
     // extended initializations from integrate_tuftIB()
  forsec all { if (ismembrane("nap")) {gbar_nap *=   0.1}}
  forsec all { if (ismembrane("kc")) {gbar_kc *=   2.}}
+ forall{
+		compartments[getAbsSecIndex(secname())] = new SectionRef()
+
+	}
  }
   endtemplate nontuftRS

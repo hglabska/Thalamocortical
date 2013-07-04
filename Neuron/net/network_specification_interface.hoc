@@ -97,7 +97,7 @@ proc set_const_curr_inj() {
 
 	// insert IClamp_const
 
-	    cells.object($1 + i).comp[1] tmpobj = new IClamp_const(0.5)
+	    cells.object($1 + i).compartments[1] tmpobj = new IClamp_const(0.5)
 //	    cells.object($1 + i).synlist.append(tmpobj)  // should this be on this list?
 
 	    tmpobj.amp = $o3.x[i]
@@ -117,7 +117,7 @@ proc set_input_curr() {
 
 	// insert IClamp
 
-	    cells.object($1 + i).comp[1] iclampobj = new IClamp(0.5)
+	    cells.object($1 + i).compartments[1] iclampobj = new IClamp(0.5)
 //	    cells.object($1 + i).synlist.append(tmpobj)  // should this be on this list?
 	    iclampobj.del = $5
 	    iclampobj.dur = $4

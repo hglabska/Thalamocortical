@@ -11,7 +11,7 @@ func targetcomp_exists() {local spgid
 		spgid = thishost_gid($1)
 		if (spgid < 0) { return -1 }
 		if (pc.gid_exists(spgid)) {
-			if (section_exists("comp", $2, pc.gid2obj(spgid))) {
+			if (pc.gid2obj(spgid).compartments[$2].exists()){
 				return spgid
 			}
 		}
@@ -42,7 +42,7 @@ proc par_netstim_create() {local gid  localobj cell, syn, nc, ns, r
 	if (!use_ectopic) { return }
 	if ((gid = targetcomp_exists($1, $2)) >= 0) {
 		cell = pc.gid2obj(gid)
-		cell.comp[$2] {syn = new PulseSyn(.5)}
+		cell.compartments[$2].sec {syn = new PulseSyn(.5)}
 		netstim_syns.append(syn)
 		syn.amp = $3
 		ns = new S_NetStim()
@@ -94,7 +94,7 @@ proc par_gap_create() { local gid
 }
 proc par_gap_create1() {localobj c, g
 	c = pc.gid2obj($1)
-	c.comp[$2] {
+	c.compartments[$2].sec {
 		g = new gGapPar(.5)
 		par_gaps.append(g)
 		pc.target_var(g, &g.vgap, $3)
@@ -158,7 +158,7 @@ proc set_const_curr_inj() {local i, gid  localobj c, clmp
 	if (!use_inject) { return }
 	for i = 1, $2 if ((gid = targetcomp_exists($1+i, 1)) >= 0) {
 		c = pc.gid2obj(gid)
-		c.comp[1] clmp = new IClamp_const(0.5)
+		c.compartments[1].sec clmp = new IClamp_const(0.5)
 		clmp.amp = $o3.x[i]
 		iclamp_const_list.append(clmp)
 	}
@@ -169,7 +169,7 @@ proc set_input_curr() {local i, gid  localobj c, clmp
 		
 	for i = 1, $2 if ((gid = targetcomp_exists($1+i, 1)) >= 0) {
 		c = pc.gid2obj(gid)
-		c.comp[1] clmp = new IClamp(0.5)
+		c.compartments[1].sec clmp = new IClamp(0.5)
 		clmp.amp = $3
 		clmp.dur = $4
 		clmp.del = $5

@@ -1,0 +1,369 @@
+L5PCtemplate[0].soma[0]0 
+L5PCtemplate[0].dend[0]12.100439 
+L5PCtemplate[0].dend[1]31.791976 
+L5PCtemplate[0].dend[2]115.2086 
+L5PCtemplate[0].dend[3]43.110891 
+L5PCtemplate[0].dend[4]93.126621 
+L5PCtemplate[0].dend[5]143.41054 
+L5PCtemplate[0].dend[6]90.846971 
+L5PCtemplate[0].dend[7]13.568954 
+L5PCtemplate[0].dend[8]35.369441 
+L5PCtemplate[0].dend[9]51.574562 
+L5PCtemplate[0].dend[10]78.776988 
+L5PCtemplate[0].dend[11]31.177654 
+L5PCtemplate[0].dend[12]49.169028 
+L5PCtemplate[0].dend[13]136.85051 
+L5PCtemplate[0].dend[14]129.08955 
+L5PCtemplate[0].dend[15]57.393509 
+L5PCtemplate[0].dend[16]5.4230788 
+L5PCtemplate[0].dend[17]14.395348 
+L5PCtemplate[0].dend[18]37.900058 
+L5PCtemplate[0].dend[19]72.500441 
+L5PCtemplate[0].dend[20]58.728402 
+L5PCtemplate[0].dend[21]71.732837 
+L5PCtemplate[0].dend[22]82.103246 
+L5PCtemplate[0].dend[23]107.02095 
+L5PCtemplate[0].dend[24]111.78295 
+L5PCtemplate[0].dend[25]31.969929 
+L5PCtemplate[0].dend[26]62.200157 
+L5PCtemplate[0].dend[27]112.71106 
+L5PCtemplate[0].dend[28]166.03092 
+L5PCtemplate[0].dend[29]57.362804 
+L5PCtemplate[0].dend[30]80.801544 
+L5PCtemplate[0].dend[31]139.55793 
+L5PCtemplate[0].dend[32]141.35587 
+L5PCtemplate[0].dend[33]108.80401 
+L5PCtemplate[0].dend[34]19.939417 
+L5PCtemplate[0].dend[35]108.99238 
+L5PCtemplate[0].dend[36]54.530293 
+L5PCtemplate[0].dend[37]119.91504 
+L5PCtemplate[0].dend[38]113.51169 
+L5PCtemplate[0].dend[39]48.065104 
+L5PCtemplate[0].dend[40]142.37851 
+L5PCtemplate[0].dend[41]115.10921 
+L5PCtemplate[0].dend[42]7.5499004 
+L5PCtemplate[0].dend[43]27.652184 
+L5PCtemplate[0].dend[44]83.068499 
+L5PCtemplate[0].dend[45]113.76317 
+L5PCtemplate[0].dend[46]20.026507 
+L5PCtemplate[0].dend[47]28.926548 
+L5PCtemplate[0].dend[48]58.800009 
+L5PCtemplate[0].dend[49]93.412077 
+L5PCtemplate[0].dend[50]88.893114 
+L5PCtemplate[0].dend[51]62.72694 
+L5PCtemplate[0].dend[52]26.677284 
+L5PCtemplate[0].dend[53]38.90963 
+L5PCtemplate[0].dend[54]102.86625 
+L5PCtemplate[0].dend[55]50.974717 
+L5PCtemplate[0].dend[56]79.643095 
+L5PCtemplate[0].dend[57]60.973032 
+L5PCtemplate[0].dend[58]131.85308 
+L5PCtemplate[0].dend[59]146.15131 
+L5PCtemplate[0].dend[60]69.049602 
+L5PCtemplate[0].dend[61]154.08442 
+L5PCtemplate[0].dend[62]160.99568 
+L5PCtemplate[0].dend[63]10.413233 
+L5PCtemplate[0].dend[64]32.208715 
+L5PCtemplate[0].dend[65]56.426064 
+L5PCtemplate[0].dend[66]138.12406 
+L5PCtemplate[0].dend[67]122.84779 
+L5PCtemplate[0].dend[68]73.517857 
+L5PCtemplate[0].dend[69]155.08087 
+L5PCtemplate[0].dend[70]192.78543 
+L5PCtemplate[0].dend[71]31.846902 
+L5PCtemplate[0].dend[72]142.75328 
+L5PCtemplate[0].dend[73]49.551573 
+L5PCtemplate[0].dend[74]111.48416 
+L5PCtemplate[0].dend[75]68.736378 
+L5PCtemplate[0].dend[76]113.0472 
+L5PCtemplate[0].dend[77]105.36388 
+L5PCtemplate[0].dend[78]20.134017 
+L5PCtemplate[0].dend[79]7.8876125 
+L5PCtemplate[0].dend[80]49.074627 
+L5PCtemplate[0].dend[81]28.883132 
+L5PCtemplate[0].dend[82]109.76665 
+L5PCtemplate[0].dend[83]50.62016 
+L5PCtemplate[0].apic[0]23.067805 
+L5PCtemplate[0].apic[1]78.685458 
+L5PCtemplate[0].apic[2]125.67108 
+L5PCtemplate[0].apic[3]160.74993 
+L5PCtemplate[0].apic[4]185.11097 
+L5PCtemplate[0].apic[5]193.76773 
+L5PCtemplate[0].apic[6]206.28415 
+L5PCtemplate[0].apic[7]228.62456 
+L5PCtemplate[0].apic[8]263.89255 
+L5PCtemplate[0].apic[9]322.68637 
+L5PCtemplate[0].apic[10]254.93381 
+L5PCtemplate[0].apic[11]200.48013 
+L5PCtemplate[0].apic[12]261.4442 
+L5PCtemplate[0].apic[13]279.40991 
+L5PCtemplate[0].apic[14]221.12922 
+L5PCtemplate[0].apic[15]261.40942 
+L5PCtemplate[0].apic[16]276.59735 
+L5PCtemplate[0].apic[17]371.68676 
+L5PCtemplate[0].apic[18]338.76403 
+L5PCtemplate[0].apic[19]352.3971 
+L5PCtemplate[0].apic[20]276.40591 
+L5PCtemplate[0].apic[21]312.65282 
+L5PCtemplate[0].apic[22]342.67522 
+L5PCtemplate[0].apic[23]371.87916 
+L5PCtemplate[0].apic[24]371.9475 
+L5PCtemplate[0].apic[25]344.75225 
+L5PCtemplate[0].apic[26]306.9882 
+L5PCtemplate[0].apic[27]315.642 
+L5PCtemplate[0].apic[28]326.19181 
+L5PCtemplate[0].apic[29]375.10063 
+L5PCtemplate[0].apic[30]373.16373 
+L5PCtemplate[0].apic[31]416.32984 
+L5PCtemplate[0].apic[32]414.14633 
+L5PCtemplate[0].apic[33]379.62069 
+L5PCtemplate[0].apic[34]348.05826 
+L5PCtemplate[0].apic[35]435.49546 
+L5PCtemplate[0].apic[36]504.15499 
+L5PCtemplate[0].apic[37]764.97499 
+L5PCtemplate[0].apic[38]946.64878 
+L5PCtemplate[0].apic[39]1014.6047 
+L5PCtemplate[0].apic[40]1092.8462 
+L5PCtemplate[0].apic[41]1198.9237 
+L5PCtemplate[0].apic[42]1224.675 
+L5PCtemplate[0].apic[43]1214.5096 
+L5PCtemplate[0].apic[44]1237.6453 
+L5PCtemplate[0].apic[45]941.28163 
+L5PCtemplate[0].apic[46]989.57676 
+L5PCtemplate[0].apic[47]1002.8527 
+L5PCtemplate[0].apic[48]1005.5674 
+L5PCtemplate[0].apic[49]1040.8913 
+L5PCtemplate[0].apic[50]657.75105 
+L5PCtemplate[0].apic[51]796.45479 
+L5PCtemplate[0].apic[52]961.15314 
+L5PCtemplate[0].apic[53]999.33937 
+L5PCtemplate[0].apic[54]1099.0214 
+L5PCtemplate[0].apic[55]1107.1719 
+L5PCtemplate[0].apic[56]1110.3291 
+L5PCtemplate[0].apic[57]1102.1565 
+L5PCtemplate[0].apic[58]1115.4956 
+L5PCtemplate[0].apic[59]1113.9915 
+L5PCtemplate[0].apic[60]805.28134 
+L5PCtemplate[0].apic[61]1008.6173 
+L5PCtemplate[0].apic[62]1115.2255 
+L5PCtemplate[0].apic[63]1217.799 
+L5PCtemplate[0].apic[64]1185.7106 
+L5PCtemplate[0].apic[65]1244.5425 
+L5PCtemplate[0].apic[66]1249.4061 
+L5PCtemplate[0].apic[67]1191.7703 
+L5PCtemplate[0].apic[68]970.83937 
+L5PCtemplate[0].apic[69]1091.0493 
+L5PCtemplate[0].apic[70]1186.1374 
+L5PCtemplate[0].apic[71]1191.1391 
+L5PCtemplate[0].apic[72]1237.7036 
+L5PCtemplate[0].apic[73]1254.5856 
+L5PCtemplate[0].apic[74]1039.2179 
+L5PCtemplate[0].apic[75]1094.353 
+L5PCtemplate[0].apic[76]1198.5758 
+L5PCtemplate[0].apic[77]1200.3085 
+L5PCtemplate[0].apic[78]1118.3939 
+L5PCtemplate[0].apic[79]220.3312 
+L5PCtemplate[0].apic[80]150.83939 
+L5PCtemplate[0].apic[81]168.02681 
+L5PCtemplate[0].apic[82]191.54068 
+L5PCtemplate[0].apic[83]246.37696 
+L5PCtemplate[0].apic[84]308.47734 
+L5PCtemplate[0].apic[85]324.73121 
+L5PCtemplate[0].apic[86]251.29678 
+L5PCtemplate[0].apic[87]250.36387 
+L5PCtemplate[0].apic[88]164.60723 
+L5PCtemplate[0].apic[89]192.45805 
+L5PCtemplate[0].apic[90]221.0117 
+L5PCtemplate[0].apic[91]222.80277 
+L5PCtemplate[0].apic[92]178.00769 
+L5PCtemplate[0].apic[93]240.89388 
+L5PCtemplate[0].apic[94]198.53504 
+L5PCtemplate[0].apic[95]234.94164 
+L5PCtemplate[0].apic[96]225.32479 
+L5PCtemplate[0].apic[97]247.22509 
+L5PCtemplate[0].apic[98]244.86136 
+L5PCtemplate[0].apic[99]127.53474 
+L5PCtemplate[0].apic[100]146.62541 
+L5PCtemplate[0].apic[101]229.11284 
+L5PCtemplate[0].apic[102]239.16453 
+L5PCtemplate[0].apic[103]185.54034 
+L5PCtemplate[0].apic[104]57.807746 
+L5PCtemplate[0].apic[105]116.31928 
+L5PCtemplate[0].apic[106]80.522464 
+L5PCtemplate[0].apic[107]109.61396 
+L5PCtemplate[0].apic[108]106.60239 
+L5PCtemplate[0].axon[0]15 
+L5PCtemplate[0].axon[1]45 
+
+
+
+dalej niż 620:
+forall{if (distance(0.5) > 620){print secname(), distance(0.5)}}
+L5PCtemplate[0].apic[37]764.97499 
+L5PCtemplate[0].apic[38]946.64878 
+L5PCtemplate[0].apic[39]1014.6047 
+L5PCtemplate[0].apic[40]1092.8462 
+L5PCtemplate[0].apic[41]1198.9237 
+L5PCtemplate[0].apic[42]1224.675 
+L5PCtemplate[0].apic[43]1214.5096 
+L5PCtemplate[0].apic[44]1237.6453 
+L5PCtemplate[0].apic[45]941.28163 
+L5PCtemplate[0].apic[46]989.57676 
+L5PCtemplate[0].apic[47]1002.8527 
+L5PCtemplate[0].apic[48]1005.5674 
+L5PCtemplate[0].apic[49]1040.8913 
+L5PCtemplate[0].apic[50]657.75105 
+L5PCtemplate[0].apic[51]796.45479 
+L5PCtemplate[0].apic[52]961.15314 
+L5PCtemplate[0].apic[53]999.33937 
+L5PCtemplate[0].apic[54]1099.0214 
+L5PCtemplate[0].apic[55]1107.1719 
+L5PCtemplate[0].apic[56]1110.3291 
+L5PCtemplate[0].apic[57]1102.1565 
+L5PCtemplate[0].apic[58]1115.4956 
+L5PCtemplate[0].apic[59]1113.9915 
+L5PCtemplate[0].apic[60]805.28134 
+L5PCtemplate[0].apic[61]1008.6173 
+L5PCtemplate[0].apic[62]1115.2255 
+L5PCtemplate[0].apic[63]1217.799 
+L5PCtemplate[0].apic[64]1185.7106 
+L5PCtemplate[0].apic[65]1244.5425 
+L5PCtemplate[0].apic[66]1249.4061 
+L5PCtemplate[0].apic[67]1191.7703 
+L5PCtemplate[0].apic[68]970.83937 
+L5PCtemplate[0].apic[69]1091.0493 
+L5PCtemplate[0].apic[70]1186.1374 
+L5PCtemplate[0].apic[71]1191.1391 
+L5PCtemplate[0].apic[72]1237.7036 
+L5PCtemplate[0].apic[73]1254.5856 
+L5PCtemplate[0].apic[74]1039.2179 
+L5PCtemplate[0].apic[75]1094.353 
+L5PCtemplate[0].apic[76]1198.5758 
+L5PCtemplate[0].apic[77]1200.3085 
+L5PCtemplate[0].apic[78]1118.3939 
+
+dalej niż 900:
+forall{if (distance(0.5) > 900){print secname(), distance(0.5)}}
+L5PCtemplate[0].apic[38]946.64878 
+L5PCtemplate[0].apic[39]1014.6047 
+L5PCtemplate[0].apic[40]1092.8462 
+L5PCtemplate[0].apic[41]1198.9237 
+L5PCtemplate[0].apic[42]1224.675 
+L5PCtemplate[0].apic[43]1214.5096 
+L5PCtemplate[0].apic[44]1237.6453 
+L5PCtemplate[0].apic[45]941.28163 
+L5PCtemplate[0].apic[46]989.57676 
+L5PCtemplate[0].apic[47]1002.8527 
+L5PCtemplate[0].apic[48]1005.5674 
+L5PCtemplate[0].apic[49]1040.8913 
+L5PCtemplate[0].apic[52]961.15314 
+L5PCtemplate[0].apic[53]999.33937 
+L5PCtemplate[0].apic[54]1099.0214 
+L5PCtemplate[0].apic[55]1107.1719 
+L5PCtemplate[0].apic[56]1110.3291 
+L5PCtemplate[0].apic[57]1102.1565 
+L5PCtemplate[0].apic[58]1115.4956 
+L5PCtemplate[0].apic[59]1113.9915 
+L5PCtemplate[0].apic[61]1008.6173 
+L5PCtemplate[0].apic[62]1115.2255 
+L5PCtemplate[0].apic[63]1217.799 
+L5PCtemplate[0].apic[64]1185.7106 
+L5PCtemplate[0].apic[65]1244.5425 
+L5PCtemplate[0].apic[66]1249.4061 
+L5PCtemplate[0].apic[67]1191.7703 
+L5PCtemplate[0].apic[68]970.83937 
+L5PCtemplate[0].apic[69]1091.0493 
+L5PCtemplate[0].apic[70]1186.1374 
+L5PCtemplate[0].apic[71]1191.1391 
+L5PCtemplate[0].apic[72]1237.7036 
+L5PCtemplate[0].apic[73]1254.5856 
+L5PCtemplate[0].apic[74]1039.2179 
+L5PCtemplate[0].apic[75]1094.353 
+L5PCtemplate[0].apic[76]1198.5758 
+L5PCtemplate[0].apic[77]1200.3085 
+L5PCtemplate[0].apic[78]1118.3939 
+
+for i = 1, 194{
+L5PC.comp[i].sec {if (distance(0.5) >900){print i}}
+}
+
+124 125 126 127 128 129 130 131 132 133 134 135 138 139 140 141 142 143 144 145 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164
+
+
+for i = 1, 194{
+L5PC.comp[i].sec {if (distance(0.5) < 900 && distance(0.5)>620){print i}}
+}
+123 136 137 146 
+
+between 500-900
+122 123 136 137 146
+
+
+for i = 1, 194{
+L5PC.comp[i].sec {if (distance(0.5) <900){print i}}
+}  + usunelam axon czyli comp 2 3
+
+1  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89  90  91  92  93  94  95  96  97  98  99  100  101  102  103  104  105  106  107  108  109  110  111  112  113  114  115  116  117  118  119  120  121  122  123  136  137  146  165  166  167  168  169  170  171  172  173  174  175  176  177  178  179  180  181  182  183  184  185  186  187  188  189  190  191  192  193  194  
+
+
+for i = 1, 194{
+L5PC.comp[i].sec {if (distance(0.5) <100){print i}}
+}
+1  2  3  5  6  8  9  10  11  12  13  14  17  18  19  20  21  22  23  24  27  28  31  32  36  38  41  44  45  46  48  49  50  51  52  53  54  55  57  58  59  62  65  66  67  70  73  75  77  80  81  82  83  85  86  87  190  192
+
+>100
+4   7   15   16   25   26   29   30   33   34   35   37   39   40   42   43   47   56   60   61   63   64   68   69   71   72   74   76   78   79   84   88   89   90   91   92   93   94   95   96   97   98   99   100   101   102   103   104   105   106   107   108   109   110   111   112   113   114   115   116   117   118   119   120   121   122   123   124   125   126   127   128   129   130   131   132   133   134   135   136   137   138   139   140   141   142   143   144   145   146   147   148   149   150   151   152   153   154   155   156   157   158   159   160   161   162   163   164   165   166   167   168   169   170   171   172   173   174   175   176   177   178   179   180   181   182   183   184   185   186   187   188   189   191   193   194
+
+
+objref kk,ll
+
+kk = new Shape(L5PC.all)
+
+ll = new SectionList()
+
+for i = 1, 194{
+L5PC.comp[i].sec {if (distance(0.5) <100){print i
+
+		ll.append()
+		}}
+	}
+
+kk.color_list(ll,2)
+
+kk.printfile("dist150.ps")
+
+
+
+oc>x3d(0.5)
+	32.672848 
+oc>y3d(0.5)
+	68.177055 
+oc>z3d(0.5)
+	-158.25 
+
+
+spiny
+objref kk,ll
+
+kk = new Shape(L5PC.all)
+
+ll = new SectionList()
+
+for i = 1, 194{
+L5PC.comp[i].sec {
+		a = abs(x3d(0.3))
+		dd = sqrt()
+		if (distance(0.5) <100){print i
+
+		ll.append()
+		}}
+	}
+
+kk.color_list(ll,2)
+
+
+
+
+/* all apic
+86  87  88  89  90  91  92  93  94  95  96  97  98  99  100  101  102  103  104  105  106  107  108  109  110  111  112  113  114  115  116  117  118  119 120  121  122  123  124  125  126  127  128  129  130  131  132  133  134  135  136  137  138  139  140  141  142  143  144  145  146  147  148  149  150  151  152  153  154  155  156  157  158  159  160  161  162  163  164  165  166  167  168  169  170  171  172  173  174  175  176  177  178  179  180  181  182  183  184  185  186  187  188  189  190  191  192  193  19
+*/

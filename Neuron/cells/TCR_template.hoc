@@ -404,16 +404,16 @@
          // compartment source in the presyn cell
  
          public comp, level, Soma, Dendrites
-         public Soma_Dendrites, Axon, all
+         public Soma_Dendrites, Axon, all,compartments
          public presyn_comp, top_level
          // it is the responsibility of the calling
          // program to set the above presynapf_tcrtic
          // compartment number
  
-         external traub_connect
+         external traub_connect,getAbsSecIndex
          objref this
   create  comp[ 137+1]
-         objref level[ 4+1], Soma, Dendrites
+         objref level[ 4+1], Soma, Dendrites,compartments[ 137+1]
          objref Soma_Dendrites, Axon
          objref synlist
 func type() {return       12 }
@@ -1276,6 +1276,11 @@ func type() {return       12 }
     forsec all { if (ismembrane("napf_tcr")){
                  fastNa_shift_napf_tcr = persistentNa_shift}
     }
+
+	forall{
+		compartments[getAbsSecIndex(secname())] = new SectionRef()
+
+	}
  }
           proc set_doubler() {doubler=0}
           // this function sets doubler to 0 

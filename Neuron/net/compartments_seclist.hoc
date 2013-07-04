@@ -1,0 +1,50 @@
+load_file("nrngui.hoc")
+
+func getAbsSecIndex(){ local nAbsInd, index  localobj str,strObj
+    strObj  =  new StringFunctions()
+    str     =  new String()
+    nAbsInd = 0
+    index   = 0
+
+    if(strObj.substr($s1, "comp") > 0) {
+        strObj.tail($s1, "comp", str.s)
+        if(sscanf(str.s, "%*c%d", &index) < 0) {
+            index = 0
+        }
+        return index
+	}
+   
+        nSecSoma = $2
+	nSecAxonalOrig = $3
+	nSecBasal = $4
+    if(strObj.substr($s1, "soma") > 0) {
+        strObj.tail($s1, "soma", str.s)
+        if(sscanf(str.s, "%*c%d", &index) < 0) {
+            index = 0
+        }
+        nAbsInd = index
+    }else if (strObj.substr($s1, "axon") >0) {
+        strObj.tail($s1, "axon", str.s)
+        if(sscanf(str.s, "%*c%d", &index) < 0) {
+            index = 0
+        }
+        nAbsInd = nSecSoma + index
+    }else if (strObj.substr($s1, "dend") >0) {
+        strObj.tail($s1, "dend", str.s)
+        if(sscanf(str.s, "%*c%d", &index) < 0) {
+            index = 0
+        }
+        nAbsInd = nSecSoma + nSecAxonalOrig + index
+    }else if (strObj.substr($s1, "apic") > 0) {
+        strObj.tail($s1, "apic", str.s)
+        if(sscanf(str.s, "%*c%d", &index) < 0) {
+            index = 0
+        }
+
+  
+        nAbsInd = nSecSoma + nSecAxonalOrig + nSecBasal + index
+    }
+    return nAbsInd
+}
+
+

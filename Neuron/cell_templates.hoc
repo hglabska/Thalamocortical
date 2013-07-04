@@ -1,6 +1,11 @@
 // cell_templates.hoc
 // loads all the cell templates
 
+load_file("nrngui.hoc")
+load_file("net/compartments_seclist.hoc")
+localloadfile("cells/L5PCbiophys3.hoc")
+load_file("import3d.hoc")
+
 {
 localloadfile("cells/deepaxax_template.hoc")
 localloadfile("cells/deepbask_template.hoc")
@@ -16,4 +21,9 @@ localloadfile("cells/suppyrRS_template.hoc")
 localloadfile("cells/TCR_template.hoc")
 localloadfile("cells/tuftIB_template.hoc")
 localloadfile("cells/tuftRS_template.hoc")
+localloadfile("cells/L5PC_template.hoc")
 }
+
+
+
+

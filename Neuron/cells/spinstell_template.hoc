@@ -37,17 +37,17 @@
          // the above function added to set neton
          // compartment source in the presyn cell
  
-         public comp, level, Soma, Dendrites
+         public comp, level, Soma, Dendrites,compartments
          public Soma_Dendrites, Axon, all
          public presyn_comp, top_level
          // it is the responsibility of the calling
          // program to set the above presynapf_spinstelltic
          // compartment number
  
-         external traub_connect
+         external traub_connect,getAbsSecIndex
          objref this, all
   create  comp[ 59+1]
-         objref level[ 9+1], Soma, Dendrites
+         objref level[ 9+1], Soma, Dendrites,compartments[59 + 1]
          objref Soma_Dendrites, Axon
          objref synlist
 func type() {return 5 }
@@ -693,5 +693,10 @@ func type() {return 5 }
     forsec all {
     if (ismembrane("napf_spinstell")) {fastNa_shift_napf_spinstell=-2.5}
     }
+
+ forall{
+		compartments[getAbsSecIndex(secname())] = new SectionRef()
+
+	}
  }
   endtemplate spinstell

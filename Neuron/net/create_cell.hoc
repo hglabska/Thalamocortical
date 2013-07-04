@@ -27,7 +27,7 @@ nRT_base = pop_base.x(12)
 base_ = -1
 
 
-proc create_cells(){local i, alpha_, coorx, coory, coorz, beta, r localobj coor 
+proc create_cells(){local i localobj coor 
 
 	strdef proc_exec
 

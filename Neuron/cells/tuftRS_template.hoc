@@ -100,17 +100,17 @@
          // the above function added to set neton
          // compartment source in the presyn cell
  
-         public comp, level, Soma, Dendrites
+         public comp, level, Soma, Dendrites, compartments
          public Soma_Dendrites, Axon, all
          public presyn_comp, top_level
          // it is the responsibility of the calling
          // program to set the above presynaptic
          // compartment number
  
-         external traub_connect
+         external traub_connect, getAbsSecIndex
          objref this
   create  comp[ 61+1]
-         objref level[ 18+1], Soma, Dendrites
+         objref level[ 18+1], Soma, Dendrites,compartments[ 61+1]
          objref Soma_Dendrites, Axon
          objref synlist
 func type() {return    7 }
@@ -1025,5 +1025,10 @@ func type() {return    7 }
  forsec all { if (ismembrane("cal")) {gbar_cal *=   0.4}}
  comp[48] { if (ismembrane("cal")) {gbar_cal *= 4.5 }}
  comp[49] { if (ismembrane("cal")) {gbar_cal *= 4.5 }}
+
+	forall{
+		compartments[getAbsSecIndex(secname())] = new SectionRef()
+
+	}
  }
   endtemplate tuftRS

@@ -76,7 +76,7 @@ proc ldbal_split() {
 	}else{
 		$o1.sec pnm.splitcell($2+1, $2)
 	}
-	if (section_exists("comp", $o5.presyn_comp ,$o5)) {
+	if ($o5.compartments[ $o5.presyn_comp].exists()){
 		pc.set_gid2node($3, pc.id)
 		gidvec.append($3)
 	}else{

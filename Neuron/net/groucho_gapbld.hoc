@@ -16,7 +16,7 @@ u = $o1
 		b = int ( x.x[1] * numcells ) 
 		
 		while(u.x[a][b] == 1){
-			rand_gap_print.printf("%d %d  \n", a+1, b+1)
+			if(display){rand_gap_print.printf("%d %d  \n", a+1, b+1)}
 			x = durand (seed, k, x)
 			y = durand (seed, k, y)
 			a = int ( x.x[0] * numcells ) 
