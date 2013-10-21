@@ -1,11 +1,3 @@
-
-c Cell types: superficial pyramidal RS; superficial pyramidal FRB;
-c superficial basket; superficial axoaxonic; superficial LTS;
-c spiny stellate; tufted deep IB; tufted deep RS; nontufted deep RS;
-c deep basket; deep axoaxonic; deep LTS; thalamocortical relay (TCR);
-c nucleus reticularis thalami (nRT).
-
-               PROGRAM GROUCHO
 c Cell types: superficial pyramidal RS; superficial pyramidal FRB;
 c superficial basket; superficial axoaxonic; superficial LTS;
 c spiny stellate; tufted deep IB; tufted deep RS; nontufted deep RS;
