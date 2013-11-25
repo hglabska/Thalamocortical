@@ -1,0 +1,54 @@
+
+FFLAGS = -w -finit-local-zero -fno-automatic -O3
+
+FC=mpif77
+
+# STRUCT = gettime.o dexptablesmall_setup.o dexptablebig_setup.o synaptic_map_construct.o synaptic_compmap_construct.o groucho_gapbld.o groucho_gapbld_mix.o durand.o
+STRUCT = dexptablesmall_setup.o dexptablebig_setup.o fnmda.o
+
+INTEGRATE = integrate_suppyrRS.o fnmda.o integrate_suppyrFRB.o integrate_supbask.o integrate_supaxax.o integrate_deepbask.o integrate_deepaxax.o integrate_supLTS.o integrate_deepLTS.o integrate_tcr.o integrate_nRT.o integrate_spinstell.o integrate_nontuftRS.o integrate_tuftRS.o integrate_tuftIB.o 
+
+INPUT_FILES =  suppyrRS.f  suppyrFRB.f  supbask.f  supaxax.f  deepbask.f  deepaxax.f  supLTS.f  deepLTS.f  tcr.f  nRT.f  spinstell.f  nontuftRS.f  tuftRS.f  tuftIB.f
+
+EXTRA=trapfpe.o
+
+#OUTPUT_FILE=-o nontuftRS
+OUTPUT_FILES=suppyrRS  suppyrFRB  supbask  supaxax  deepbask  deepaxax  supLTS  deepLTS  tcr  nRT  spinstell  nontuftRS  tuftRS  tuftIB
+
+#GROUCHO = nontuftRS.f 
+$(OUTPUT_FILES): $(INPUT_FILES) $(STRUCT) $(INTEGRATE) makefile 
+	$(FC) $(FFLAGS) suppyrRS.f $(STRUCT)  integrate_suppyrRS.o  -o suppyrRS
+	$(FC) $(FFLAGS) suppyrFRB.f $(STRUCT)  integrate_suppyrFRB.o  -o suppyrFRB
+	$(FC) $(FFLAGS) supbask.f $(STRUCT)  integrate_supbask.o  -o supbask
+	$(FC) $(FFLAGS) supLTS.f $(STRUCT)  integrate_supLTS.o  -o supLTS
+	$(FC) $(FFLAGS) supaxax.f $(STRUCT)  integrate_supaxax.o  -o supaxax	
+	$(FC) $(FFLAGS) spinstell.f $(STRUCT)  integrate_spinstell.o  -o spinstell
+	$(FC) $(FFLAGS) tuftIB.f $(STRUCT)  integrate_tuftIB.o  -o tuftIB
+	$(FC) $(FFLAGS) tuftRS.f $(STRUCT)  integrate_tuftRS.o  -o tuftRS
+	$(FC) $(FFLAGS) deepaxax.f $(STRUCT)  integrate_deepaxax.o  -o deepaxax
+	$(FC) $(FFLAGS) deepbask.f $(STRUCT)  integrate_deepbask.o  -o deepbask
+	$(FC) $(FFLAGS) deepLTS.f $(STRUCT)  integrate_deepLTS.o  -o deepLTS
+	$(FC) $(FFLAGS) nontuftRS.f  $(STRUCT) integrate_nontuftRS.o  -o nontuftRS
+	$(FC) $(FFLAGS) nRT.f  $(STRUCT) integrate_nRT.o  -o nRT
+	$(FC) $(FFLAGS) tcr.f  $(STRUCT) integrate_tcr.o  -o TCR
+#	mpif77 $(FLAGS) groucho_nogettime.f $(STRUCT) $(INTEGRATE) -lPEPCF90 -o groucho
+
+# STRUCT files
+
+#dexptablesmall_setup.o: dexptablesmall_setup.f
+
+#dexptablebig_setup.o: dexptablebig_setup.f
+
+#durand.o: durand.f
+
+#fnmda.o: fnmda.f
+
+# INTEGRATE files
+
+#integrate_nontuftRS.o: integrate_nontuftRS.f
+
+
+
+clean :
+	rm -f  $(OUTPUT_FILES)
+	rm -f *.o
